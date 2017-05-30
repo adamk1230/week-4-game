@@ -26,9 +26,10 @@ function gemValue(){
 	$("#totalScore").html(totalScore);
 	}
 
-//Display wins, losses
+//Display wins & losses, assign gem values
 $("#wins").html(wins);
 $("#losses").html(losses);
+gemValue();
 
 //Reset function
 function reset(){
@@ -40,9 +41,6 @@ function reset(){
 	totalScore = 0;
 	gemValue();
 }
-
-
-gemValue();
 
 
 $(".gems").on("click", function() {
@@ -67,14 +65,4 @@ $(".gems").on("click", function() {
 	}
 
 
-
-
-
 }); //ends on click
-
-
-
-
-
-
-//$(document).on("pageload"),
